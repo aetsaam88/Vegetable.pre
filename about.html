@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Footer</title>
+    <link rel="stylesheet" href="about-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<div class="top-bar" id="#top">
+    <div class="container1">
+        <div class="contact-info">
+            <span class="info-item">
+                <i class="fa-solid fa-phone"></i> + 1235 2355 98
+            </span>
+            <span class="info-item">
+                <i class="fa-solid fa-envelope"></i> YOUREMAIL@EMAIL.COM
+            </span>
+        </div>
+        <div class="delivery-info">
+            <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbr">
+    <div class="logo">
+        <h1>VEGEFOODS</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        &#9776;
+    </div>
+    <ul class="nav-link">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdwn">
+            <a href="#">SHOP <span class="arrow">&#9662;</span></a>
+            <ul class="dropdwn-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="single-product.html">Single Product</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> [0]</a></li>
+    </ul>
+</nav>
+
+<div class="bg-gray-100 flex items-center justify-center min-h-screen font-sans m-0 p-0">
+    <div class="text-center w-full">
+        <div class="slider-container">
+            <div class="slider-item active" id="slide1">
+                <img src="bg_1.jpg" alt="First Slider Image">
+                <div class="text-overlay">
+                    <p class="mt-2 text-lg fade-in-up">Home > About</p>
+                    <p class="organic-text fade-in-up">About Us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function toggleMobileMenu() {
+        const navLinks = document.querySelector('.nav-link');
+        navLinks.classList.toggle('show');
+    }
+</script>
+
+ <div class="hero-section">
+  <div class="hero-image-container">
+    <img src="about.jpg" alt="Woman holding an apple in a grocery store">
+    <div class="video-play-button">
+      <div class="play-button-inner"></div>
+    </div>
+  </div>
+  <div class="hero-content fade-in-up">
+    <h1>Welcome to Vegefoods an eCommerce website</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+    <a href="#" class="shop-now-btn fade-in-up" >Shop now</a>
+  </div>
+</div>
+
+<div class="newsletter-section">
+  <div class="newsletter-text">
+    <h2>Subcribe to our Newsletter</h2>
+    <p>get e-mail updates about our latest shops and special offers</p>
+  </div>
+  <div class="newsletter-form">
+    <input type="email" placeholder="Enter email address">
+    <button>Subcribe</button>
+  </div>
+</div>
+
+<div class="stats-section">
+  <div class="stat-item">
+  <div class="stat-number" data-target="10000">0</div>
+  <div class="stat-label">HAPPY CUSTOMERS</div>
+</div>
+<div class="stat-item">
+  <div class="stat-number" data-target="100">0</div>
+  <div class="stat-label">BRANCHES</div>
+</div>
+<div class="stat-item">
+  <div class="stat-number" data-target="1000">0</div>
+  <div class="stat-label">PARTNER</div>
+</div>
+<div class="stat-item">
+  <div class="stat-number" data-target="100">0</div>
+  <div class="stat-label">AWARDS</div>
+</div>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const statNumbers = document.querySelectorAll('.stat-number');
+  const duration = 10000; 
+
+  statNumbers.forEach(stat => {
+    let start = 0;
+    const target = parseInt(stat.getAttribute('data-target'));
+    const increment = target / (duration / 10); 
+
+    const counter = setInterval(() => {
+      start += increment;
+      if (start > target) {
+        stat.textContent = target.toLocaleString();
+        clearInterval(counter);
+      } else {
+        stat.textContent = Math.ceil(start).toLocaleString();
+      }
+    }, 10);
+  });
+});</script>
+
+
+  
+<section class="testimonial-section">
+  <div class="container">
+    <p class="subtitle fade-in-up">Testimony</p>
+    <h2 class="title fade-in-up">Our satisfied customer says</h2>
+    <p class="description fade-in-up">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Garreth Smith</h4>
+            <p class="customer-job">SYSTEM ANALYST</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_3.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Garreth Smith</h4>
+            <p class="customer-job">MARKETING MANAGER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Garreth Smith</h4>
+            <p class="customer-job">INTERFACE DESIGNER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_3.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">John Doe</h4>
+            <p class="customer-job">PRODUCT MANAGER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Jane Smith</h4>
+            <p class="customer-job">SOFTWARE ENGINEER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_3.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Michael Brown</h4>
+            <p class="customer-job">UX DESIGNER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Emily Johnson</h4>
+            <p class="customer-job">DATA SCIENTIST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+    
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const dotsContainer = document.querySelector('.slider-dots');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentSlide = 0;
+  
+ function createDots() {
+    dotsContainer.innerHTML = '';
+    const totalSlides = slides.length;
+    const numDots = totalSlides - 2; 
+
+    for (let i = 0; i < numDots; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === 0) {
+        dot.classList.add('active');
+      }
+      dot.addEventListener('click', () => {
+        currentSlide = i;
+        updateSlider();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      dot.classList.remove('active');
+      if (index === currentSlide) {
+        dot.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    updateSlider();
+  });
+  
+  createDots();
+  updateSlider();
+});</script>
+
+<div class="features-section">
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle pink">
+            <i class="fa-solid fa-truck"></i>
+        </div>
+        <h3>FREE SHIPPING</h3>
+        <p>ON ORDER OVER $100</p>
+    </div>
+
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle beige">
+            <i class="fa-solid fa-seedling"></i>
+        </div>
+        <h3>ALWAYS FRESH</h3>
+        <p>PRODUCT WELL PACKAGE</p>
+    </div>
+
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle light-blue">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h3>SUPERIOR QUALITY</h3>
+        <p>QUALITY PRODUCTS</p>
+    </div>
+
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle light-green">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+        <h3>SUPPORT</h3>
+        <p>24/7 SUPPORT</p>
+    </div>
+</div>
+
+    <div class="scroll-to-top fade-in-up">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-column vegefoods">
+                <h3>Vegefoods</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns &amp; Exchange</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column faqs">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column questions">
+                <h3>Have a Questions?</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+2 392 3929 210</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@yourdomain.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faders = document.querySelectorAll('.fade-in-up');
+
+        const appearOptions = {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px" 
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target); 
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+
+</body>
+</html>

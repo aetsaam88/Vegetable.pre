@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Footer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container1">
+        <div class="contact-info">
+            <span class="info-item">
+                <i class="fa-solid fa-phone"></i> + 1235 2355 98
+            </span></div>
+                    <div class="contact-info">
+
+            <span class="info-item">
+                <i class="fa-solid fa-envelope"></i> YOUREMAIL@EMAIL.COM
+            </span>
+        </div>
+        <div class="delivery-info">
+            <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbr">
+    <div class="logo">
+        <h1>VEGEFOODS</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        &#9776;
+    </div>
+    <ul class="nav-link">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdwn">
+            <a href="#">SHOP <span class="arrow">&#9662;</span></a>
+            <ul class="dropdwn-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="single-product.html">Single Product</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> [0]</a></li>
+    </ul>
+</nav>
+
+<div class="bg-gray-100 flex items-center justify-center min-h-screen font-sans m-0 p-0">
+    <div class="text-center w-full">
+        <div class="slider-container">
+            <div class="slider-item active" id="slide1">
+                <img src="bg_1.jpg" alt="First Slider Image">
+                <div class="text-overlay">
+                    <p class="organic-text fade-in-up">We Serve fresh Vagitable & <br>Fruits</p>
+                    <p class="mt-2 text-lg fade-in-up">We deliver 100% organic Vagetable & fruit</p>
+                    <button class="view-details-btn fade-in-up">View Details</button>
+                </div>
+            </div>
+
+            <div class="slider-item" id="slide2">
+                <img src="bg_2.jpg" alt="Second Slider Image">
+                <div class="text-overlay">
+                    <p class="text-3xl font-bold fade-in-up">100% Fresh & Organic foods</p>
+                    <p class="mt-2 text-lg fade-in-up">We deliver 100% organic Vagetable & fruit</p>
+                    <button class="view-details-btn fade-in-up">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const slides = document.querySelectorAll('.slider-item');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Toggle the mobile navigation menu
+    function toggleMobileMenu() {
+        const navLinks = document.querySelector('.nav-link');
+        navLinks.classList.toggle('show-mobile-menu');
+    }
+
+    setInterval(nextSlide, 3000);
+</script>
+
+<div class="features-section">
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle pink">
+            <i class="fa-solid fa-truck"></i>
+        </div>
+        <h3>FREE SHIPPING</h3>
+        <p>ON ORDER OVER $100</p>
+    </div>
+
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle beige">
+            <i class="fa-solid fa-seedling"></i>
+        </div>
+        <h3>ALWAYS FRESH</h3>
+        <p>PRODUCT WELL PACKAGE</p>
+    </div>
+
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle light-blue">
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <h3>SUPERIOR QUALITY</h3>
+        <p>QUALITY PRODUCTS</p>
+    </div>
+
+    <div class="feature-card fade-in-up">
+        <div class="icon-circle light-green">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+        <h3>SUPPORT</h3>
+        <p>24/7 SUPPORT</p>
+    </div>
+</div>
+
+<section class="category-section">
+    <div class="category-grid">
+        <div class="category-card fade-in-up">
+            <img src="category-2.jpg" alt="Category Image">
+            <div class="overlay-text">
+                <h3>Fruits</h3>
+            </div>
+        </div>
+
+        <div class="category-card center-text-card fade-in-up">
+            <div class="text-content">
+                <h2>Vegetables</h2>
+                <p>Protect the health of every home</p>
+                <a href="#" class="shop-now-btn">Shop now</a>
+            </div>
+        </div>
+
+        <div class="category-card fade-in-up">
+            <img src="category-3.jpg" alt="Category Image">
+            <div class="overlay-text">
+                <h3>Juices</h3>
+            </div>
+        </div>
+
+        <div class="category-card fade-in-up">
+            <img src="category-1.jpg" alt="Category Image">
+            <div class="overlay-text">
+                <h3>Vegetables</h3>
+            </div>
+        </div>
+
+        <div class="category-card fade-in-up">
+            <img src="category.jpg" alt="Category Image">
+            <div class="overlay-text">
+            </div>
+        </div>
+
+        <div class="category-card fade-in-up">
+            <img src="category-4.jpg" alt="Category Image">
+            <div class="overlay-text">
+                <h3>Dried</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="main-product">
+    <p style="color: green;" class="fade-in-up">Featured Products</p>
+    <h2 class="fade-in-up">Our Products    </h2>
+    <p style="color: grey;" class="fade-in-up">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+
+</p>
+<div class="product-grid">
+
+    <div class="product-card  fade-in-up">
+        <div class="discount-badge">30% OFF</div>
+        <img src="product-1.jpg">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>BELL PEPPER</p>
+            <span>$15.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <img src="product-2.jpg" alt="Cucumber">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>CUCUMBER</p>
+            <span>$12.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <img src="product-3.jpg" alt="Carrot">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>CARROT</p>
+            <span>$10.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <img src="product-4.jpg" alt="Eggplant">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>EGGPLANT</p>
+            <span>$8.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <div class="discount-badge">30% OFF</div>
+        <img src="product-5.jpg" alt="Tomato">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>TOMATO</p>
+            <span>$18.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <img src="product-6.jpg" alt="Potato">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>POTATO</p>
+            <span>$5.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <img src="product-7.jpg" alt="Lettuce">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>LETTUCE</p>
+            <span>$7.00</span>
+        </div>
+    </div>
+
+    <div class="product-card fade-in-up">
+        <img src="product-8.jpg" alt="Fruit Juice">
+        <div class="overlay-content">
+            <div class="icons">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="product-info">
+            <p>FRUIT JUICE</p>
+            <span>$120.00</span>
+        </div>
+    </div></div>
+</div>
+
+  <div class="deal-of-day-section">
+    <div class="deal-content-container">
+        <p class="deal-subtitle fade-in-up">Best Price For You</p>
+        <h2 class="deal-title fade-in-up">Deal of the day</h2>
+        <p class="deal-description fade-in-up">Far far away, behind the word mountains, far from the <br>countries Vokalia and Consonantia</p>
+        <h3 class="product-name fade-in-up"><i>Spinach</i></h3>
+        <p class="price-info fade-in-up"><s>$10</s> <strong>Now $5 only</strong></p>
+
+        <div class="countdown-timer fade-in-up">
+            <div class="countdown-box"><span id="days">00</span><p>DAYS</p></div>
+            <div class="countdown-box"><span id="hours">00</span><p>HOURS</p></div>
+            <div class="countdown-box"><span id="minutes">00</span><p>MINUTES</p></div>
+            <div class="countdown-box"><span id="seconds">00</span><p>SECONDS</p></div>
+        </div>
+    </div>
+</div>
+  <script>
+const targetDate = new Date("2026-08-05T23:59:59").getTime();
+
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) {
+        document.querySelector(".countdown-timer").innerHTML = "Deal expired!";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days.toString().padStart(2, "0");
+    document.getElementById("hours").innerText = hours.toString().padStart(2, "0");
+    document.getElementById("minutes").innerText = minutes.toString().padStart(2, "0");
+    document.getElementById("seconds").innerText = seconds.toString().padStart(2, "0");
+}
+
+setInterval(updateCountdown, 1000);
+
+updateCountdown();
+  </script>
+
+
+
+
+
+<section class="testimonial-section">
+  <div class="container">
+    <p class="subtitle fade-in-up">Testimony</p>
+    <h2 class="title fade-in-up">Our satisfied customer says</h2>
+    <p class="description fade-in-up">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Garreth Smith</h4>
+            <p class="customer-job">SYSTEM ANALYST</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_3.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Garreth Smith</h4>
+            <p class="customer-job">MARKETING MANAGER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Garreth Smith</h4>
+            <p class="customer-job">INTERFACE DESIGNER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_3.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">John Doe</h4>
+            <p class="customer-job">PRODUCT MANAGER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Jane Smith</h4>
+            <p class="customer-job">SOFTWARE ENGINEER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_3.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Michael Brown</h4>
+            <p class="customer-job">UX DESIGNER</p>
+          </div>
+        </div>
+        <div class="testimonial-slide fade-in-up">
+          <div class="testimonial-card">
+            <div class="quote-icon">“</div>
+            <img src="person_1.jpg" alt="Customer Image" class="customer-image">
+            <p class="testimonial-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4 class="customer-name">Emily Johnson</h4>
+            <p class="customer-job">DATA SCIENTIST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+  const sliderWrapper = document.querySelector('.slider-wrapper');
+  const dotsContainer = document.querySelector('.slider-dots');
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentSlide = 0;
+  
+ function createDots() {
+    dotsContainer.innerHTML = '';
+    const totalSlides = slides.length;
+    const numDots = totalSlides - 2; 
+
+    for (let i = 0; i < numDots; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (i === 0) {
+        dot.classList.add('active');
+      }
+      dot.addEventListener('click', () => {
+        currentSlide = i;
+        updateSlider();
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateSlider() {
+    const slideWidth = slides[0].clientWidth;
+    sliderWrapper.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+      dot.classList.remove('active');
+      if (index === currentSlide) {
+        dot.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    updateSlider();
+  });
+  
+  createDots();
+  updateSlider();
+});</script>
+
+
+
+
+ <div class="brand-logos-section">
+        <div class="brand-container">
+            <div class="brand-logo fade-in-up">
+                <i class="fab fa-microsoft"></i>
+                <span>Microsoft</span>
+            </div>
+            <div class="brand-logo android fade-in-up">
+                <i class="fab fa-android"></i>
+                <span>Android</span>
+            </div>
+            <div class="brand-logo fade-in-up">
+                <i class="fab fa-java"></i>
+                <span>java</span>
+            </div>
+            <div class="brand-logo google fade-in-up">
+                <span>Google</span>
+            </div>
+            <div class="brand-logo adobe fade-in-up">
+                <i class="fab fa-adobe"></i>
+                <span>Adobe</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <h3>Subcribe to our Newsletter</h3>
+            <p>Get e-mail updates about our latest shops and special offers</p>
+        </div>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter email address" class="email-input">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+    </div>
+    
+    <div class="scroll-to-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-column vegefoods">
+                <h3>Vegefoods</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns &amp; Exchange</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column faqs">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column questions">
+                <h3>Have a Questions?</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+2 392 3929 210</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@yourdomain.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faders = document.querySelectorAll('.fade-in-up');
+
+        const appearOptions = {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px" 
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target); 
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Footer</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container1">
+        <div class="contact-info">
+            <span class="info-item">
+                <i class="fa-solid fa-phone"></i> + 1235 2355 98
+            </span></div>
+            <div class="contact-info">
+
+            <span class="info-item">
+                <i class="fa-solid fa-envelope"></i> YOUREMAIL@EMAIL.COM
+            </span>
+        </div>
+        <div class="delivery-info">
+            <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbr">
+    <div class="logo">
+        <h1>VEGEFOODS</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        &#9776;
+    </div>
+    <ul class="nav-link">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdwn">
+            <a href="#">SHOP <span class="arrow">&#9662;</span></a>
+            <ul class="dropdwn-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="single-product.html">Single Product</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> [0]</a></li>
+    </ul>
+</nav>
+
+<div class="bg-gray-100 flex items-center justify-center min-h-screen font-sans m-0 p-0">
+    <div class="text-center w-full">
+        <div class="slider-container">
+            <div class="slider-item active" id="slide1">
+                <img src="bg_1.jpg" alt="First Slider Image">
+                <div class="text-overlay">
+                    <p class="mt-2 text-lg fade-in-up">Home > Contact</p>
+                    <p class="organic-text fade-in-up">Contact Us</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function toggleMobileMenu() {
+        const navLinks = document.querySelector('.nav-link');
+        navLinks.classList.toggle('show');
+    }
+</script>
+
+
+<div class="container">
+    <div class="contact-info-bar">
+        <div class="contact-info-item">
+            <h4>Address</h4>
+            <p>123 Main St, Anytown, USA 12345</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Phone</h4>
+            <p>+1 234 567 8900</p>
+        </div>
+        <div class="contact-info-item">
+            <h4>Email</h4>
+            <p>contact@example.com</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2104192770233!2d144.96225531532585!3d-37.81410717975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642baf55b0a31%3A0xe5f9b9f9f59f9e!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1617123456789!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="scroll-to-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-column vegefoods">
+                <h3>Vegefoods</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns &amp; Exchange</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column faqs">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column questions">
+                <h3>Have a Questions?</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+2 392 3929 210</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@yourdomain.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faders = document.querySelectorAll('.fade-in-up');
+
+        const appearOptions = {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px" 
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target); 
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+
+</body>
+</html>

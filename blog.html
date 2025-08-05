@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Footer</title>
+    <link rel="stylesheet" href="blog-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<div class="top-bar" id="#top">
+    <div class="container1">
+        <div class="contact-info">
+            <span class="info-item">
+                <i class="fa-solid fa-phone"></i> + 1235 2355 98
+            </span>
+            <span class="info-item">
+                <i class="fa-solid fa-envelope"></i> YOUREMAIL@EMAIL.COM
+            </span>
+        </div>
+        <div class="delivery-info">
+            <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbr">
+    <div class="logo">
+        <h1>VEGEFOODS</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        &#9776;
+    </div>
+    <ul class="nav-link">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdwn">
+            <a href="#">SHOP <span class="arrow">&#9662;</span></a>
+            <ul class="dropdwn-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="single-product.html">Single Product</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> [0]</a></li>
+    </ul>
+</nav>
+
+<div class="bg-gray-100 flex items-center justify-center min-h-screen font-sans m-0 p-0">
+    <div class="text-center w-full">
+        <div class="slider-container">
+            <div class="slider-item active" id="slide1">
+                <img src="bg_1.jpg" alt="First Slider Image">
+                <div class="text-overlay">
+                    <p class="mt-2 text-lg fade-in-up">Home > Blog</p>
+                    <p class="organic-text fade-in-up">Blog</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function toggleMobileMenu() {
+        const navLinks = document.querySelector('.nav-link');
+        navLinks.classList.toggle('show');
+    }
+</script>
+
+<div class="container">
+  <main class="blog-area">
+    <div class="post-entry fade-in-up">
+      <img src="image_1.jpg" alt="Blog Post Image 1" class="entry-image">
+      <div class="entry-details">
+        <div class="entry-meta">
+          <span>July 20, 2019</span> | <span>Admin</span> | <span>💬 3</span>
+        </div>
+        <h3>Even the all-powerful Pointing has no control about the blind texts</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+    </div>
+    
+    <div class="post-entry fade-in-up">
+      <img src="image_2.jpg" alt="Blog Post Image 2" class="entry-image">
+      <div class="entry-details">
+        <div class="entry-meta">
+          <span>July 20, 2019</span> | <span>Admin</span> | <span>💬 3</span>
+        </div>
+        <h3>Even the all-powerful Pointing has no control about the blind texts</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+    </div>
+
+    <div class="post-entry fade-in-up">
+      <img src="image_3.jpg" alt="Blog Post Image 3" class="entry-image">
+      <div class="entry-details">
+        <div class="entry-meta">
+          <span>July 20, 2019</span> | <span>Admin</span> | <span>💬 3</span>
+        </div>
+        <h3>Even the all-powerful Pointing has no control about the blind texts</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+    </div>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-section search-bar ">
+      <input type="text" placeholder="Search...">
+      <button>🔍</button>
+    </div>
+
+    <div class="sidebar-section categories fade-in-up">
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">Vegetables</a><span>(12)</span></li>
+        <li><a href="#">Fruits</a><span>(22)</span></li>
+        <li><a href="#">Juice</a><span>(37)</span></li>
+        <li><a href="#">Dries</a><span>(42)</span></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section recent-blog">
+      <h4 class="fade-in-up">Recent Blog</h4>
+      <div class="recent-post-item fade-in-up">
+        <img src="image_1.jpg" alt="Recent Post 1">
+        <div class="recent-post-content">
+          <a href="#"><h5>Even the all-powerful Pointing has no control about the blind texts</h5></a>
+          <div class="recent-post-meta">
+            <span>🗓️ April 09, 2019</span>
+            <span><i class="fa-solid fa-person"></i>Admin</span>
+            <span>💬 19</span>
+          </div>
+        </div>
+      </div>
+      <div class="recent-post-item fade-in-up">
+        <img src="image_2.jpg" alt="Recent Post 2">
+        <div class="recent-post-content">
+          <a href="#"><h5>Even the all-powerful Pointing has no control about the blind texts</h5></a>
+          <div class="recent-post-meta">
+            <span>🗓️ April 09, 2019</span>
+            <span> <i class="fa-solid fa-person"></i>Admin</span>
+            <span>💬 19</span>
+          </div>
+        </div>
+      </div>
+      <div class="recent-post-item fade-in-up">
+        <img src="image_3.jpg" alt="Recent Post 3">
+        <div class="recent-post-content">
+          <a href="#"><h5>Even the all-powerful Pointing has no control about the blind texts</h5></a>
+          <div class="recent-post-meta">
+            <span>🗓️ April 09, 2019</span>
+            <span><i class="fa-solid fa-person"></i>Admin</span>
+            <span>💬 19</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+
+
+<div class="page-wrapper">
+  <main class="blog-area">
+    <div class="post-entry fade-in-up">
+      <img src="image_4.jpg" alt="Blog Post Image 1" class="entry-image">
+      <div class="entry-details">
+        <div class="entry-meta">
+          <span>July 20, 2019</span> | <span>Admin</span> | <span>💬 3</span>
+        </div>
+        <h3>Even the all-powerful Pointing has no control about the blind texts</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+    </div>
+    
+    <div class="post-entry fade-in-up">
+      <img src="image_5.jpg" alt="Blog Post Image 2" class="entry-image">
+      <div class="entry-details">
+        <div class="entry-meta">
+          <span>July 20, 2019</span> | <span>Admin</span> | <span>💬 3</span>
+        </div>
+        <h3>Even the all-powerful Pointing has no control about the blind texts</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+    </div>
+
+    <div class="post-entry fade-in-up">
+      <img src="image_6.jpg" alt="Blog Post Image 3" class="entry-image">
+      <div class="entry-details">
+        <div class="entry-meta">
+          <span>July 20, 2019</span> | <span>Admin</span> | <span>💬 3</span>
+        </div>
+        <h3>Even the all-powerful Pointing has no control about the blind texts</h3>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+    </div>
+  </main>
+  
+  <aside class="sidebar-section-a">
+    <div class="sidebar-block tags-section">
+      <h4 class="fade-in-up">Tag Cloud</h4>
+      <div class="tag-box fade-in-up">
+        <a href="#" class="tag-link">FRUITS</a>
+        <a href="#" class="tag-link">TOMATO</a>
+        <a href="#" class="tag-link">MANGO</a>
+        <a href="#" class="tag-link">APPLE</a>
+        <a href="#" class="tag-link">CARROTS</a>
+        <a href="#" class="tag-link">ORANGE</a>
+        <a href="#" class="tag-link">PEPPER</a>
+        <a href="#" class="tag-link">EGGPLANT</a>
+      </div>
+    </div>
+
+    <div class="sidebar-block info-text fade-in-up">
+      <h4>Paragraph</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+    </div>
+  </aside>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <h3>Subcribe to our Newsletter</h3>
+            <p>Get e-mail updates about our latest shops and special offers</p>
+        </div>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter email address" class="email-input">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+    </div>
+    
+    <div class="scroll-to-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+     <footer>
+        <div class="container">
+            <div class="footer-column vegefoods">
+                <h3>Vegefoods</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns &amp; Exchange</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column faqs">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column questions">
+                <h3>Have a Questions?</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+2 392 3929 210</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@yourdomain.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faders = document.querySelectorAll('.fade-in-up');
+
+        const appearOptions = {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px" 
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target); 
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+
+</body>
+</html>

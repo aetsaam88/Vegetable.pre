@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Footer</title>
+    <link rel="stylesheet" href="shop-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="container1">
+        <div class="contact-info">
+            <span class="info-item">
+                <i class="fa-solid fa-phone"></i> + 1235 2355 98
+            </span>
+            <span class="info-item">
+                <i class="fa-solid fa-envelope"></i> YOUREMAIL@EMAIL.COM
+            </span>
+        </div>
+        <div class="delivery-info">
+            <span>3-5 BUSINESS DAYS DELIVERY & FREE RETURNS</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbr">
+    <div class="logo">
+        <h1>VEGEFOODS</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        &#9776;
+    </div>
+    <ul class="nav-link">
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdwn">
+            <a href="#">SHOP <span class="arrow">&#9662;</span></a>
+            <ul class="dropdwn-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="single-product.html">Single Product</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> [0]</a></li>
+    </ul>
+</nav>
+
+<div class="bg-gray-100 flex items-center justify-center min-h-screen font-sans m-0 p-0">
+    <div class="text-center w-full">
+        <div class="slider-container">
+            <div class="slider-item active" id="slide1">
+                <img src="bg_1.jpg" alt="First Slider Image">
+                <div class="text-overlay">
+                    <p class="mt-2 text-lg fade-in-up">Home > Shop</p>
+                    <p class="organic-text fade-in-up">Shop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function toggleMobileMenu() {
+        const navLinks = document.querySelector('.nav-link');
+        navLinks.classList.toggle('show');
+    }
+</script>
+
+<div class="main-wrapper">
+    <div class="main-nav">
+        <a href="#" class="active">All</a>
+        <a href="#">Vegetables</a>
+        <a href="#">Fruits</a>
+        <a href="#">Juice</a>
+        <a href="#">Dried</a>
+    </div>
+
+    <div class="item-grid">
+        <div class="item-card fade-in-up">
+            <div class="sale-tag">30%</div>
+            <img src="product-1.jpg" alt="Bell Pepper">
+            <div class="item-details">
+                <p class="item-title">BELL PEPPER</p>
+                <p class="item-price"><span class="old-price-text">$120.00</span> $80.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-2.jpg" alt="Strawberry">
+            <div class="item-details">
+                <p class="item-title">STRAWBERRY</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up" >
+            <img src="product-3.jpg" alt="Green Beans">
+            <div class="item-details">
+                <p class="item-title">GREEN BEANS</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-4.jpg" alt="Purple Cabbage">
+            <div class="item-details">
+                <p class="item-title">PURPLE CABBAGE</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+        
+        <div class="item-card fade-in-up">
+            <div class="sale-tag">30%</div>
+            <img src="product-5.jpg" alt="Tomato">
+            <div class="item-details">
+                <p class="item-title">TOMATO</p>
+                <p class="item-price"><span class="old-price-text">$120.00</span> $80.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-6.jpg" alt="Broccoli">
+            <div class="item-details">
+                <p class="item-title">BROCCOLI</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-7.jpg" alt="Carrots">
+            <div class="item-details">
+                <p class="item-title">CARROTS</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-8.jpg" alt="Fruit Juice">
+            <div class="item-details">
+                <p class="item-title">FRUIT JUICE</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <div class="sale-tag">30%</div>
+            <img src="product-1.jpg" alt="Onion">
+            <div class="item-details">
+                <p class="item-title">ONION</p>
+                <p class="item-price"><span class="old-price-text">$120.00</span> $80.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-2.jpg" alt="Apple">
+            <div class="item-details">
+                <p class="item-title">APPLE</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-3.jpg" alt="Garlic">
+            <div class="item-details">
+                <p class="item-title">GARLIC</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+
+        <div class="item-card fade-in-up">
+            <img src="product-5.jpg" alt="Chilli">
+            <div class="item-details">
+                <p class="item-title">CHILLI</p>
+                <p class="item-price">$120.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-nav">
+        <a href="#">&lt;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&gt;</a>
+    </div>
+</div>
+
+
+
+
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <h3>Subcribe to our Newsletter</h3>
+            <p>Get e-mail updates about our latest shops and special offers</p>
+        </div>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter email address" class="email-input">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+    </div>
+    
+    <div class="scroll-to-top">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-column vegefoods">
+                <h3>Vegefoods</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon fade-in-up"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column help">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns &amp; Exchange</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column faqs">
+                <h3>FAQs</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column questions">
+                <h3>Have a Questions?</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+2 392 3929 210</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@yourdomain.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;2025 All rights reserved | This template is made with <i class="fas fa-heart"></i> by Colorlib</p>
+        </div>
+    </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faders = document.querySelectorAll('.fade-in-up');
+
+        const appearOptions = {
+            threshold: 0.1, 
+            rootMargin: "0px 0px -50px 0px" 
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target); 
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+
+</body>
+</html>
